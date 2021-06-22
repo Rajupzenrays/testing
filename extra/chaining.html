@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chaining Example</title>
+</head>
+<body>
+	<script >
+		
+
+		class Student{
+			name;
+			age;
+			constructor(name, age){
+				this.name = name;
+				this.age = age;
+			}
+			changeName(name){
+				this.name = name;
+				return this;
+
+			}
+			changeAge(age){
+				this.age = age;
+				return this;
+				
+			}
+		}
+		let avinashOb = new Student("Avinash",22);
+		avinashOb.changeName("Avenshaaa").changeAge(24);
+		console.log(avinashOb);
+	</script>
+
+</body>
+</html>
